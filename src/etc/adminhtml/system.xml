@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Search Improvements Module
+ *
+ * @author    Peter McWilliams <pmcwilliams@augustash.com>
+ * @copyright Copyright (c) 2021 August Ash (https://www.augustash.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="catalog">
+            <group id="frontend">
+                <field id="default_sort_dir" translate="label comment" type="select" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Product Listing Sort Direction</label>
+                    <source_model>Augustash\SortOptions\Model\Config\Source\ListDirection</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
